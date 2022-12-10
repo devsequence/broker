@@ -1,0 +1,257 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Raleway', Arial, sans-serif;
+  color: $default;
+  background-color: $white;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: $Raleway;
+}
+h1 {
+  font-size: 42px;
+  line-height: 42px;
+  color: $default;
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 42px;
+  color: $default;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 26px;
+  color: $default;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 28px;
+  color: $default;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 26px;
+  color: $default;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 21px;
+  color: $default;
+}
+
+p {
+  font-size: 14px;
+  line-height: 23px;
+}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+@media (min-width:992px){.container{max-width:960px}}
+@media (min-width:1200px){.container{max-width:1190px}}
+img {
+  display: block;
+  //width: 100%;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+section {
+  position: relative;
+  padding: 40px 0;
+  z-index: 1;
+}
+
+.section {
+  position: relative;
+  padding: 100px 0;
+}
+
+.row.min {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.row.min > div[class^="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.overflow {
+  overflow: hidden !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+.clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+span,
+.icon {
+  transition: all 150ms ease;
+}
+button{
+  cursor: pointer;
+}
+.wysiwyg{
+  font-size: 16px;
+  line-height: 24px;
+  color: $default;
+  p{
+    font-size: 16px;
+    line-height: 24px;
+    color: $default;
+    margin-bottom: 16px;
+  }
+}
+
+
+input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.input{
+  display: inline-block;
+  font-size: 13px;
+  color: $default;
+  padding: 0 13px;
+  width: 100%;
+  height: 38px;
+  border: 1px solid $gray;
+  background-color: $white;
+  border-radius: 0;
+  text-overflow: ellipsis;
+  &::-webkit-input-placeholder {
+    color: $gray;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color: $gray;
+    opacity: 1;
+  }
+  &:-moz-placeholder {
+    color: $gray;
+    opacity: 1;
+  }
+  &::-ms-input-placeholder {
+    color: $gray;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    color: $gray;
+    opacity: 1;
+  }
+  &:focus,
+  &:active {
+    border-color: $default;
+  }
+  // invalid
+  &:invalid {
+    box-shadow: none;
+  }
+  &:-moz-submit-invalid {
+    box-shadow: none;
+  }
+  &:-moz-ui-invalid {
+    box-shadow: none;
+  }
+}
+.btn-secondary,
+.btn-primary{
+  font-family: $Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  padding: 14px 19px;
+}
+.btn-primary{
+  color: #FFFFFF;
+  background: rgba(35, 55, 123, 0.75);
+  &:hover{
+    color: rgba(35, 55, 123, 1);
+    background: transparent;
+    border-color: rgba(35, 55, 123, 1);
+  }
+}
+.btn-secondary{
+  border-color: rgba(35, 55, 123, 1);
+  color: rgba(35, 55, 123, 1);
+  background:transparent;
+  &:hover{
+    color: #fff;
+    background: rgba(35, 55, 123, 0.75);
+    border-color: rgba(35, 55, 123, 0.75);
+  }
+}
+.title-section{
+  font-family: $Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 41px;
+  color: #FECD68;
+  &__white{
+    color: #fff;
+  }
+}
+.slide{
+  outline: none !important;
+  border: 0 !important;
+  &:hover, &:active{
+    outline: none !important;
+    border: 0 !important;
+  }
+}
+.tab-item{
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  margin-top: 50px;
+  opacity: 0;
+  transition: margin-top 0.7s ease, opacity 0.4s ease;
+  &.active{
+    visibility: visible;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    opacity: 1;
+  }
+}

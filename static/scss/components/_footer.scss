@@ -1,0 +1,129 @@
+.footer{
+  background: #576699;
+  padding: 37px 0 54px;
+  a{
+    &:hover{
+      color: #FECD68;
+    }
+  }
+  &-title{
+    font-family: $Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  &-phone{
+    margin-bottom: 30px;
+    a{
+      font-family: $Lato;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 36px;
+      color: #FECD68;
+    }
+  }
+  &-address{
+    max-width: 270px;
+    font-family: $Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+    b{
+      font-weight: 800;
+    }
+    a{
+      color: #FFFFFF;
+    }
+  }
+  &-wrap{
+    display: flex;
+  }
+  &-nav{
+    width: 260px;
+    margin: 0 0;
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      list-style: none;
+    }
+    a{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #FFFFFF;
+    }
+    li{
+      width: 50%;
+      margin-bottom: 25px;
+    }
+  }
+  &-email{
+    margin-bottom: 20px;
+    span{
+      font-family: $Lato;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      color: #fff;
+    }
+    a{
+      font-family: $Lato;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #FFFFFF;
+    }
+  }
+  &-social{
+    ul{
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+    }
+    li{
+      margin-right: 10px;
+    }
+    a{
+      &:hover{
+        img{
+          filter: brightness(0) saturate(100%) invert(96%) sepia(55%) saturate(7465%) hue-rotate(310deg) brightness(106%) contrast(99%);
+        }
+      }
+    }
+  }
+  &-item{
+    &:nth-of-type(1){
+      position: relative;
+      padding-left: 30px;
+      &:before{
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background: #fff;
+      }
+    }
+    &:nth-of-type(2){
+      max-width: 260px;
+      margin: 0 auto;
+    }
+    &:last-of-type{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
