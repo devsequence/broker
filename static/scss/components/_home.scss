@@ -13,12 +13,15 @@
 	}
 	&-media {
 		width: 100%;
-		max-width: 1600px;
+		max-width: 100%;
+		height: 100vh;
 		margin: 0 auto;
 		box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
 		filter: drop-shadow(10px 10px 10px rgba(21, 21, 21, 0.25));
 		img {
 			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 	&-desc {
@@ -97,30 +100,31 @@
 		}
 		&__title{
 			font-weight: 700;
-			font-size: 13px;
-			line-height: 15px;
+			font-size: 14px;
+			line-height: 16px;
 			color: #131F18;
 			margin-bottom: 12px;
+			min-height: 32px;
 			a{
 				font-weight: 700;
-				font-size: 13px;
-				line-height: 15px;
+				font-size: 14px;
+				line-height: 16px;
 				color: #131F18;
 			}
 		}
 		&__text{
 			font-weight: 400;
-			font-size: 10px;
-			line-height: 12px;
+			font-size: 12px;
+			line-height: 14px;
 			color: #626262;
-			min-height: 80px;
+			min-height: 120px;
 		}
 		&__link{
 			margin-top: auto;
 			.link{
 				font-weight: 600;
-				font-size: 10px;
-				line-height: 12px;
+				font-size: 14px;
+				line-height: 16px;
 				color: #FECD68;
 				position: relative;
 				&:after {
@@ -128,8 +132,8 @@
 					content: '';
 					right: -10px;
 					top: 6px;
-					height: 13px;
-					width: 13px;
+					height: 16px;
+					width: 16px;
 					display: inline-block;
 					background-size: contain;
 					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M11.2421 4.35355C11.4374 4.15829 11.4374 3.84171 11.2421 3.64645L8.06016 0.464466C7.8649 0.269204 7.54832 0.269204 7.35305 0.464466C7.15779 0.659728 7.15779 0.976311 7.35305 1.17157L10.1815 4L7.35305 6.82843C7.15779 7.02369 7.15779 7.34027 7.35305 7.53553C7.54832 7.7308 7.8649 7.7308 8.06016 7.53553L11.2421 4.35355ZM0.784058 4.5H10.8886V3.5H0.784058V4.5Z' fill='%23FECD68'/%3E%3C/svg%3E");
